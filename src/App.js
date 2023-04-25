@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import Flashcard from './FlashCard/FlashCard';
+import AddFlashcardForm from './CreateCard/CreateCard'
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import 
 
 function App() {
+  // let l = [
+  //   {
+  //     term: 'JavaScript',
+  //     definition: 'A high-level, interpreted programming language used to create interactive effects within web browsers.'
+  //   },
+  //   {
+  //     term: 'React',
+  //     definition: 'A JavaScript library for building user interfaces.'
+  //   },
+  //   {
+  //     term: 'Node.js',
+  //     definition: 'A JavaScript runtime built on Chrome\'s V8 JavaScript engine.'
+  //   }
+  // ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      {/* <> */}
+      <Routes>
+        <Route path='Flashcard' element={<Flashcard />}/>
+          {/* <Flashcard /> */}
+        {/* </Route> */}
+        <Route path='/' element={<AddFlashcardForm/>}/>
+
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
