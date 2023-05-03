@@ -1,5 +1,7 @@
 # Getting Started with Flash Card Game with Create React App
 
+# this is for the fork 
+
 This project was simele css  with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
